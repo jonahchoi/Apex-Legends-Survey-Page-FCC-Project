@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Apex Legends Survey Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <h1 id="title">Apex Legends Character Survey</h1>
+  
+  <p id="description">Finding out what the playerbase actually likes/dislikes.</p>
+  
+  <form id="survey-form">
+    
+    <div class="form-element">
+      <label id="name-label" for="name">Name <input id="name" type="text" class="form-input" placeholder="Enter your name" required></label>
+    </div>
+ 
+    <div class="form-element">
+      <label id="email-label" for="email">Email <input id="email" type="email" class="form-input" placeholder="Enter your email" required></label>
+    </div>
+    
+    <div class="form-element">
+      <p>Select your rank</p>
+      <select id="dropdown" name="rank" class="form-input">
+        <option disabled selected value>Select an option</option>
+        <option value="bronze">Rookie</option>
+        <option value="bronze">Bronze</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="platinum">Platinum</option>
+        <option value="diamond">Diamond</option>
+        <option value="masters">Masters</option>
+        <option value="predator">Predator</option>
+      </select>
+    </div>
+    
+    <div class="form-element">
+      <label id="number-label" for="number">Rank number (1-4, if applicable)<input id="number" type="number" min=1 max=4 placeholder="Rank number"></label> 
+    </div>
+    
+    <div class="form-element">
+      <p>How much do you enjoy playing Apex Legends?</p>
+      <label><input type="radio" name="enjoy" value="5" class="form-radio">5- I love it I play everyday.</label>
+      
+      <label><input type="radio" name="enjoy" value="4" class="form-radio">4- It's fun enough</label>
+      <label><input type="radio" name="enjoy" value="3" class="form-radio">3- It's alright</label>
+      <label><input type="radio" name="enjoy" value="2" class="form-radio">2- I don't really like playing that much</label>
+      <label><input type="radio" name="enjoy" value="1" class="form-radio">1- I'd rather play Minesweeper</label>
+    </div>
+    
+    <div class="form-element">
+      <p>What legends do you play the most? (Choose up to 3)</p>
+      <label for="bloodhound"><input id="bloodhound" type="checkbox" value="Bloodhound">Bloodhound</label>
+      <label for="gibraltar"><input id="gibraltar" type="checkbox" value="Gibraltar">Gibraltar</label>
+      <label for="lifeline"><input id="lifeline" type="checkbox" value="Lifeline">Lifeline</label>
+      <label for="Pathfinder"><input id="Pathfinder" type="checkbox" value="Pathfinder">Pathfinder</label>    
+      <label for="wraith"><input id="wraith" type="checkbox" value="wraith">Wraith</label>
+      <label for="bangalore"><input id="bangalore" type="checkbox" value="bangalore">Bangalore</label>
+      <label for="caustic"><input id="caustic" type="checkbox" value="caustic">Caustic</label>
+      <label for="mirage"><input id="mirage" type="checkbox" value="mirage">Mirage</label>
+      <label for="octane"><input id="octane" type="checkbox" value="octane">Octane</label>
+      <label for="wattson"><input id="wattson" type="checkbox" value="wattson">Wattson</label>
+      <label for="crypto"><input id="crypto" type="checkbox" value="crypto">Crypto</label>
+      <label for="revenant"><input id="revenant" type="checkbox" value="revenant">Revenant</label>
+      <label for="loba"><input id="loba" type="checkbox" value="loba">Loba</label>
+      <label for="rampart"><input id="rampart" type="checkbox" value="rampart">Rampart</label>
+      <label for="horizon"><input id="horizon" type="checkbox" value="horizon">Horizon</label>
+      <label for="fuse"><input id="fuse" type="checkbox" value="fuse">Fuse</label>
+      <label for="valkyrie"><input id="valkyrie" type="checkbox" value="valkyrie">Valkyrie</label>
+      <label for="seer"><input id="seer" type="checkbox" value="seer">Seer</label>
+      <label for="ash"><input id="ash" type="checkbox" value="ash">Ash</label>
+      <label for="mad maggie"><input id="mad maggie" type="checkbox" value="mad maggie">Mad Maggie</label>
+    </div>
+    
+    <div class="form-element">
+      <label for="extra-input">What would you most like to see changed or implemented in Apex Legends?</label>
+    <textarea id="extra-input" name="extra-input" class="form-input-textarea" placeholder="Enter suggestions here">
+    </textarea>
+    
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

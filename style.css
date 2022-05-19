@@ -1,0 +1,65 @@
+body{
+  
+  width: 40%;
+  margin:auto;
+  font-size:20px;
+}
+
+#title{
+  background-color: maroon;
+  color:white;
+  text-align:center;
+  padding:1rem;
+}
+#description{
+  text-align:center
+}    
+p{
+  font-size:1.25rem;
+  font-weight: 400;
+}
+#survey-form{
+  background-color: maroon;
+  padding: 1rem 1rem 1rem 0.5rem;
+}
+.form-element{
+  padding: 10px;
+  color:white;
+  font-size: 16px;
+}
+label{
+  display:flex;  
+}
+#name-label,
+#email-label{
+  display:block;
+}
+#number{
+  margin-left: 0.5rem;
+}
+.form-input{
+  display:block;
+  width:100%;
+  margin-top: .5rem ;
+  height: 1.5rem;
+  
+} 
+.form-radio{
+  display:inline-block;
+
+  margin-right:;
+}
+.form-input-textarea{
+  min-height: 100px;
+  width:98%;
+  padding:.5rem;
+  
+}
+button{
+  display:block;
+  width:98%;
+  
+  margin: 1rem;
+  margin-left:0.5rem;
+  background-color:green;
+}
